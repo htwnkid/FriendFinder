@@ -1,0 +1,64 @@
+body {
+
+    background-color: black;
+    color: white;
+      
+}
+
+
+#submitButton {
+
+    margin-top: 20px;
+
+}
+
+h1 {
+
+    margin-left: 350px;
+    margin-bottom: 60px;
+
+}
+
+h2 {
+
+   
+    margin-bottom: 10px;
+
+}
+
+#namelabel,
+#nameField,
+#urllabel,
+#urlField   {
+
+    margin-left: 80px;
+
+
+}
+
+#nameField,
+#urlField   {
+
+    margin-left: 80px;
+    width: 100%;
+
+
+}
+
+#urlField   {
+
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
