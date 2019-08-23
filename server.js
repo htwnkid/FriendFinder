@@ -7,7 +7,7 @@ const PORT = 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require("./app/routing/apiRouting")(app);
+//require("./routing/apiRouting")(app);
 require("./app/routing/htmlRoutes")(app);
 
 app.listen(PORT, function() {
