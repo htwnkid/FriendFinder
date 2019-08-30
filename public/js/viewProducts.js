@@ -1,0 +1,67 @@
+$(document).ready(function () {
+
+    console.log("I got inside viewProducts.js");
+
+    // Getting a reference to the input field where user adds a new todo
+    //var $newItemInput = $("input.new-item");
+
+    // Our new todos will go inside the todoContainer
+    var $productContainer = $(".product-container");
+
+    // Adding event listeners for deleting, editing, and adding todos
+    //$(document).on("click", "button.delete", deleteTodo);
+    //$(document).on("click", "button.complete", toggleComplete);
+    //$(document).on("click", ".todo-item", editTodo);
+    //$(document).on("keyup", ".todo-item", finishEdit);
+    //$(document).on("blur", ".todo-item", cancelEdit);
+    //$(document).on("submit", "#todo-form", insertTodo);
+
+    // Our initial todos array
+    var product = [];
+
+    // Getting todos from database when page loads
+    getProduct();
+
+    // This function resets the todos displayed with new todos from the database
+    function initializeRows() {
+        $productContainer.empty();
+        var rowsToAdd = [];
+        for (var i = 0; i < todos.length; i++) {
+            rowsToAdd.push(createNewRow(product[i]));
+        }
+        $productContainer.prepend(rowsToAdd);
+    }
+
+    // This function grabs todos from the database and updates the view
+    function getProduct() {
+        $.get("/api/products", function (data) {
+            product = data;
+            initializeRows();
+        });
+    }
+
+    // This function constructs a todo-item row
+    function createNewRow(todo) {
+        var $newInputRow = $(
+            [
+                "<li class='list-group-item todo-item'>",
+                "<span>",
+                product.text,
+                "</span>",
+                "<input type='text' class='edit' style='display: none;'>",
+                "<button class='delete btn btn-danger'>x</button>",
+                "<button class='complete btn btn-primary'>✓</button>",
+                "</li>"
+            ].join("")
+        );
+
+        $newInputRow.find("button.delete").data("id", product.id);
+        $newInputRow.find("input.edit").css("display", "none");
+        $newInputRow.data("product", product);
+        if (product.complete) {
+            $newInputRow.find("span").css("text-decoration", "line-through");
+        }
+        return $newInputRow;
+    }
+
+});

@@ -11,6 +11,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.16.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htwnkid/FriendFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htwnkid/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/htwnkid/FriendFinder#readme"
 }
