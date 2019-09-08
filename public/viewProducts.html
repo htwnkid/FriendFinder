@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Todo - Express</title>
+    <title>Product</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/lumen/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles2.css" media="screen" title="no title">
+    <link rel="stylesheet" type="text/css" href="/css/style2.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -14,45 +14,344 @@
 <body>
 
     <div class="container">
+
+        <h1>BAMAZON PRODUCTS LIST</h1>
+
         <div class="row">
-            <div class="col-10">
-                <form>
-                    <div class="form-row">
-                        <div id="id" class="col">
-                            <input type="text" readonly class="form-control-plaintext">
-                        </div>
-                        <div id="productName" class="col">
-                            <input type="text" readonly class="form-control-plaintext">
-                        </div>
-                        <div id="department" class="col">
-                            <input type="text" readonly class="form-control-plaintext">
-                        </div>
-                        <div id="price" class="col">
-                            <input type="text" readonly class="form-control-plaintext">
-                        </div>
-                        <div id="stkQty" class="col">
-                            <input type="text" readonly class="form-control-plaintext">
-                        </div>
-                    </div>
 
-                    <div class="col-2">
-                        <button id="purchasebtn" type="submit" class="btn btn-success">Purchase Products</button>
-                    </div>
-                </form>
+            <form>
+                <div class="form-row no-gutters">
 
-            </div>
+                    <div class="col">
+                        <input id="productName" readonly type="text" class="form-control-plaintext"
+                            placeholder="Product_Name">
+                    </div>
+                    <div class="col">
+                        <input id="deptName" readonly type="text" class="form-control-plaintext"
+                            placeholder="Department_Name">
+                    </div>
+                    <div class="col">
+                        <input id="price" readonly type="text" class="form-control-plaintext" placeholder="Price">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty" readonly type="text" class="form-control-plaintext" placeholder="Stock_Qty">
+                    </div>
+                </div>
+
+            </form>
 
         </div>
 
-        <span class="product-container"></span>
+        <div class="row">
 
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans1" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans1" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans1" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans1" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans2" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans2" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans2" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans2" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans3" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans3" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans3" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans3" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans4" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans4" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans4" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans4" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans5" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans5" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans5" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans5" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans6" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans6" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans6" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans6" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans7" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans7" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans7" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans7" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans8" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans8" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans8" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans8" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans9" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans9" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans9" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans9" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="row">
+
+            <form>
+                <div class="form-row">
+
+                    <div class="col">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input class="form-check-input" type="checkbox"> <input id="productName_ans10" readonly
+                                    type="text" class="form-control-plaintext">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input id="deptName_ans10" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="price_ans10" readonly type="text" class="form-control-plaintext">
+                    </div>
+                    <div class="col">
+                        <input id="stkQty_ans10" readonly type="text" class="form-control-plaintext">
+                    </div>
+
+
+                </div>
+
+            </form>
+
+        </div>
 
     </div>
 
 
+    <div class="col-2">
+        <button id="purchasebtn" type="submit" class="btn btn-primary btn-lg">Purchase Products</button>
+    </div>
+
 
     <!-- Custom Script -->
-    <script src="js/viewProducts.js" type="text/javascript"></script>
+    <script src="js/viewProducts.js"></script>
 
 </body>
 
